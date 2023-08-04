@@ -26,10 +26,20 @@
                 return word.slice(-1);
             }
 
-            console.log(add7(5));
-            console.log(multiply(5, 5));
-            console.log(capitalize('hello'));
-            console.log(lastLetter('How are you?'));
+            let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+            for (let i = 1; i <= answer; i++) {
+
+                if (i % 3 === 0 && i % 5 === 0) {
+                    console.log("FizzBuzz");
+                } else if (i % 5 === 0) {
+                    console.log("Buzz");
+                } else if (i % 3 === 0) {
+                    console.log("Fizz");
+                } else {
+                    console.log(i);
+                }
+            }
         </script>
     </body>
 

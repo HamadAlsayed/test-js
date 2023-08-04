@@ -22,13 +22,14 @@
                 return word.charAt(0).toUpperCase() + word.slice(1);
             }
 
-            function lastLetter () {
-
+            function lastLetter (word) {
+                return word.slice(-1);
             }
 
             console.log(add7(5));
             console.log(multiply(5, 5));
             console.log(capitalize('hello'));
+            console.log(lastLetter('How are you?'));
         </script>
     </body>
 
